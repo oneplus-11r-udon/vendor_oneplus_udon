@@ -9,8 +9,6 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/udon/proprietary/odm/bin/hw/android.hardware.ir-service:$(TARGET_COPY_OUT_ODM)/bin/hw/android.hardware.ir-service \
     vendor/oneplus/udon/proprietary/odm/bin/hw/vendor.oplus.hardware.biometrics.fingerprint@2.1-service_uff:$(TARGET_COPY_OUT_ODM)/bin/hw/vendor.oplus.hardware.biometrics.fingerprint@2.1-service_uff \
     vendor/oneplus/udon/proprietary/odm/bin/hw/vendor.oplus.hardware.cammidasservice-V1-service:$(TARGET_COPY_OUT_ODM)/bin/hw/vendor.oplus.hardware.cammidasservice-V1-service \
-    vendor/oneplus/udon/proprietary/odm/bin/hw/vendor.qti.esepowermanager@1.1-service:$(TARGET_COPY_OUT_ODM)/bin/hw/vendor.qti.esepowermanager@1.1-service \
-    vendor/oneplus/udon/proprietary/odm/bin/hw/vendor.qti.secure_element@1.2-service:$(TARGET_COPY_OUT_ODM)/bin/hw/vendor.qti.secure_element@1.2-service \
     vendor/oneplus/udon/proprietary/odm/etc/acdbdata/Audio_Parameter_Version.txt:$(TARGET_COPY_OUT_ODM)/etc/acdbdata/Audio_Parameter_Version.txt \
     vendor/oneplus/udon/proprietary/odm/etc/acdbdata/FTM/acdb_cal.acdb:$(TARGET_COPY_OUT_ODM)/etc/acdbdata/FTM/acdb_cal.acdb \
     vendor/oneplus/udon/proprietary/odm/etc/acdbdata/FTM/workspaceFileXml.qwsp:$(TARGET_COPY_OUT_ODM)/etc/acdbdata/FTM/workspaceFileXml.qwsp \
@@ -870,8 +868,6 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/udon/proprietary/odm/etc/init/init.odm.camera.provider.override.rc:$(TARGET_COPY_OUT_ODM)/etc/init/init.odm.camera.provider.override.rc \
     vendor/oneplus/udon/proprietary/odm/etc/init/vendor.oplus.hardware.biometrics.fingerprint@2.1-service.rc:$(TARGET_COPY_OUT_ODM)/etc/init/vendor.oplus.hardware.biometrics.fingerprint@2.1-service.rc \
     vendor/oneplus/udon/proprietary/odm/etc/init/vendor.oplus.hardware.cammidasservice-V1-service.rc:$(TARGET_COPY_OUT_ODM)/etc/init/vendor.oplus.hardware.cammidasservice-V1-service.rc \
-    vendor/oneplus/udon/proprietary/odm/etc/init/vendor.qti.esepowermanager@1.1-service.rc:$(TARGET_COPY_OUT_ODM)/etc/init/vendor.qti.esepowermanager@1.1-service.rc \
-    vendor/oneplus/udon/proprietary/odm/etc/init/vendor.qti.secure_element@1.2-service.rc:$(TARGET_COPY_OUT_ODM)/etc/init/vendor.qti.secure_element@1.2-service.rc \
     vendor/oneplus/udon/proprietary/odm/etc/inparm/iris7/inParm14.txt:$(TARGET_COPY_OUT_ODM)/etc/inparm/iris7/inParm14.txt \
     vendor/oneplus/udon/proprietary/odm/etc/inparm/iris7/inParm14_low.txt:$(TARGET_COPY_OUT_ODM)/etc/inparm/iris7/inParm14_low.txt \
     vendor/oneplus/udon/proprietary/odm/etc/inparm/iris7/inParm17.txt:$(TARGET_COPY_OUT_ODM)/etc/inparm/iris7/inParm17.txt \
@@ -951,9 +947,6 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/udon/proprietary/odm/etc/lvacfs_params/2mic/audiozoom_7.txt:$(TARGET_COPY_OUT_ODM)/etc/lvacfs_params/2mic/audiozoom_7.txt \
     vendor/oneplus/udon/proprietary/odm/etc/lvacfs_params/2mic/audiozoom_8.txt:$(TARGET_COPY_OUT_ODM)/etc/lvacfs_params/2mic/audiozoom_8.txt \
     vendor/oneplus/udon/proprietary/odm/etc/lvacfs_params/2mic/audiozoom_9.txt:$(TARGET_COPY_OUT_ODM)/etc/lvacfs_params/2mic/audiozoom_9.txt \
-    vendor/oneplus/udon/proprietary/vendor/etc/libnfc-nxp.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-nxp.conf \
-    vendor/oneplus/udon/proprietary/vendor/etc/libnfc-nci.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-nci.conf \
-    vendor/oneplus/udon/proprietary/vendor/firmware/sn100u.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/sn100u.bin \
     vendor/oneplus/udon/proprietary/odm/etc/sensor/config/lux_aod.json:$(TARGET_COPY_OUT_ODM)/etc/sensor/config/lux_aod.json \
     vendor/oneplus/udon/proprietary/odm/etc/sensor/config/waipio_qrd_ak0991x.json:$(TARGET_COPY_OUT_ODM)/etc/sensor/config/waipio_qrd_ak0991x.json \
     vendor/oneplus/udon/proprietary/odm/etc/sensor/config/waipio_qrd_alsps.json:$(TARGET_COPY_OUT_ODM)/etc/sensor/config/waipio_qrd_alsps.json \
@@ -1009,7 +1002,6 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/udon/proprietary/odm/lib/rfsa/adsp/libvdsuperphoto_skel.so:$(TARGET_COPY_OUT_ODM)/lib/rfsa/adsp/libvdsuperphoto_skel.so \
     vendor/oneplus/udon/proprietary/odm/lib64/android.hardware.biometrics.common-V1-ndk_platform.so:$(TARGET_COPY_OUT_ODM)/lib64/android.hardware.biometrics.common-V1-ndk_platform.so \
     vendor/oneplus/udon/proprietary/odm/lib64/android.hardware.ir-V1-ndk_platform.so:$(TARGET_COPY_OUT_ODM)/lib64/android.hardware.ir-V1-ndk_platform.so \
-    vendor/oneplus/udon/proprietary/odm/lib64/android.hardware.secure_element@1.0-impl.so:$(TARGET_COPY_OUT_ODM)/lib64/android.hardware.secure_element@1.0-impl.so \
     vendor/oneplus/udon/proprietary/odm/lib64/camera/com.qti.sensor.udon_imx890.so:$(TARGET_COPY_OUT_ODM)/lib64/camera/com.qti.sensor.udon_imx890.so \
     vendor/oneplus/udon/proprietary/odm/lib64/camera/com.qti.sensor.udon_imx890_sunny.so:$(TARGET_COPY_OUT_ODM)/lib64/camera/com.qti.sensor.udon_imx890_sunny.so \
     vendor/oneplus/udon/proprietary/odm/lib64/camera/com.qti.sensor.udon_ov02b.so:$(TARGET_COPY_OUT_ODM)/lib64/camera/com.qti.sensor.udon_ov02b.so \
@@ -1052,7 +1044,6 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/udon/proprietary/odm/lib64/camera/libafCustomParam_Cam3.bin:$(TARGET_COPY_OUT_ODM)/lib64/camera/libafCustomParam_Cam3.bin \
     vendor/oneplus/udon/proprietary/odm/lib64/camera/libafCustomParam_SecCam0.bin:$(TARGET_COPY_OUT_ODM)/lib64/camera/libafCustomParam_SecCam0.bin \
     vendor/oneplus/udon/proprietary/odm/lib64/camera/revision.txt:$(TARGET_COPY_OUT_ODM)/lib64/camera/revision.txt \
-    vendor/oneplus/udon/proprietary/odm/lib64/hw/vendor.qti.esepowermanager@1.1-impl.so:$(TARGET_COPY_OUT_ODM)/lib64/hw/vendor.qti.esepowermanager@1.1-impl.so \
     vendor/oneplus/udon/proprietary/odm/lib64/libAF.so:$(TARGET_COPY_OUT_ODM)/lib64/libAF.so \
     vendor/oneplus/udon/proprietary/odm/lib64/libAlgoInterface.so:$(TARGET_COPY_OUT_ODM)/lib64/libAlgoInterface.so \
     vendor/oneplus/udon/proprietary/odm/lib64/libAlgoProcess.so:$(TARGET_COPY_OUT_ODM)/lib64/libAlgoProcess.so \
@@ -1254,8 +1245,6 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/udon/proprietary/odm/lib64/vendor.oplus.hardware.olc2-V1-ndk_platform.so:$(TARGET_COPY_OUT_ODM)/lib64/vendor.oplus.hardware.olc2-V1-ndk_platform.so \
     vendor/oneplus/udon/proprietary/odm/lib64/vendor.oplus.hardware.orms@1.0.so:$(TARGET_COPY_OUT_ODM)/lib64/vendor.oplus.hardware.orms@1.0.so \
     vendor/oneplus/udon/proprietary/odm/lib64/vendor.oplus.hardware.touch-V1-ndk_platform.so:$(TARGET_COPY_OUT_ODM)/lib64/vendor.oplus.hardware.touch-V1-ndk_platform.so \
-    vendor/oneplus/udon/proprietary/odm/lib64/vendor.qti.esepowermanager@1.0.so:$(TARGET_COPY_OUT_ODM)/lib64/vendor.qti.esepowermanager@1.0.so \
-    vendor/oneplus/udon/proprietary/odm/lib64/vendor.qti.esepowermanager@1.1.so:$(TARGET_COPY_OUT_ODM)/lib64/vendor.qti.esepowermanager@1.1.so \
     vendor/oneplus/udon/proprietary/odm/vendor/etc/wifi/WCNSS_qcom_cfg.ini:$(TARGET_COPY_OUT_ODM)/vendor/etc/wifi/WCNSS_qcom_cfg.ini \
     vendor/oneplus/udon/proprietary/odm/vendor/firmware/uff_jv.b00:$(TARGET_COPY_OUT_ODM)/vendor/firmware/uff_jv.b00 \
     vendor/oneplus/udon/proprietary/odm/vendor/firmware/uff_jv.b01:$(TARGET_COPY_OUT_ODM)/vendor/firmware/uff_jv.b01 \
