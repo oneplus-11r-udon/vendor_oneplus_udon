@@ -6,6 +6,7 @@ PRODUCT_SOONG_NAMESPACES += \
     vendor/oneplus/udon
 
 PRODUCT_COPY_FILES += \
+    vendor/oneplus/udon/proprietary/odm/bin/hw/android.hardware.ir-service:$(TARGET_COPY_OUT_ODM)/bin/hw/android.hardware.ir-service \
     vendor/oneplus/udon/proprietary/odm/bin/hw/vendor.oplus.hardware.biometrics.fingerprint@2.1-service_uff:$(TARGET_COPY_OUT_ODM)/bin/hw/vendor.oplus.hardware.biometrics.fingerprint@2.1-service_uff \
     vendor/oneplus/udon/proprietary/odm/bin/hw/vendor.oplus.hardware.cammidasservice-V1-service:$(TARGET_COPY_OUT_ODM)/bin/hw/vendor.oplus.hardware.cammidasservice-V1-service \
     vendor/oneplus/udon/proprietary/odm/bin/hw/vendor.qti.esepowermanager@1.1-service:$(TARGET_COPY_OUT_ODM)/bin/hw/vendor.qti.esepowermanager@1.1-service \
@@ -863,6 +864,7 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/udon/proprietary/odm/etc/camera/tonemap/tonemap_lut_8:$(TARGET_COPY_OUT_ODM)/etc/camera/tonemap/tonemap_lut_8 \
     vendor/oneplus/udon/proprietary/odm/etc/camera/tonemap/tonemap_lut_9:$(TARGET_COPY_OUT_ODM)/etc/camera/tonemap/tonemap_lut_9 \
     vendor/oneplus/udon/proprietary/odm/etc/camera/wide.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/wide.bin \
+    vendor/oneplus/udon/proprietary/odm/etc/init/android.hardware.ir-service.rc:$(TARGET_COPY_OUT_ODM)/etc/init/android.hardware.ir-service.rc \
     vendor/oneplus/udon/proprietary/odm/etc/init/init.camera_upate.rc:$(TARGET_COPY_OUT_ODM)/etc/init/init.camera_upate.rc \
     vendor/oneplus/udon/proprietary/odm/etc/init/init.camera_update.rc:$(TARGET_COPY_OUT_ODM)/etc/init/init.camera_update.rc \
     vendor/oneplus/udon/proprietary/odm/etc/init/init.odm.camera.provider.override.rc:$(TARGET_COPY_OUT_ODM)/etc/init/init.odm.camera.provider.override.rc \
@@ -1006,6 +1008,7 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/udon/proprietary/odm/lib/rfsa/adsp/libvdblurless_skel.so:$(TARGET_COPY_OUT_ODM)/lib/rfsa/adsp/libvdblurless_skel.so \
     vendor/oneplus/udon/proprietary/odm/lib/rfsa/adsp/libvdsuperphoto_skel.so:$(TARGET_COPY_OUT_ODM)/lib/rfsa/adsp/libvdsuperphoto_skel.so \
     vendor/oneplus/udon/proprietary/odm/lib64/android.hardware.biometrics.common-V1-ndk_platform.so:$(TARGET_COPY_OUT_ODM)/lib64/android.hardware.biometrics.common-V1-ndk_platform.so \
+    vendor/oneplus/udon/proprietary/odm/lib64/android.hardware.ir-V1-ndk_platform.so:$(TARGET_COPY_OUT_ODM)/lib64/android.hardware.ir-V1-ndk_platform.so \
     vendor/oneplus/udon/proprietary/odm/lib64/android.hardware.secure_element@1.0-impl.so:$(TARGET_COPY_OUT_ODM)/lib64/android.hardware.secure_element@1.0-impl.so \
     vendor/oneplus/udon/proprietary/odm/lib64/camera/com.qti.sensor.udon_imx890.so:$(TARGET_COPY_OUT_ODM)/lib64/camera/com.qti.sensor.udon_imx890.so \
     vendor/oneplus/udon/proprietary/odm/lib64/camera/com.qti.sensor.udon_imx890_sunny.so:$(TARGET_COPY_OUT_ODM)/lib64/camera/com.qti.sensor.udon_imx890_sunny.so \
@@ -1535,6 +1538,7 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/udon/proprietary/vendor/lib64/hw/audio.primary.taro.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/audio.primary.taro.so \
     vendor/oneplus/udon/proprietary/vendor/lib64/hw/camera.qcom.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/camera.qcom.so \
     vendor/oneplus/udon/proprietary/vendor/lib64/hw/com.qti.chi.override.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/com.qti.chi.override.so \
+    vendor/oneplus/udon/proprietary/vendor/lib64/hw/consumerir.default.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/consumerir.default.so \
     vendor/oneplus/udon/proprietary/vendor/lib64/libSonyIMX471RmscLibrary.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libSonyIMX471RmscLibrary.so \
     vendor/oneplus/udon/proprietary/vendor/lib64/libaidenoiser.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libaidenoiser.so \
     vendor/oneplus/udon/proprietary/vendor/lib64/libbitmlengine.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libbitmlengine.so \
@@ -1601,6 +1605,7 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/udon/proprietary/vendor/lib64/vendor.qti.hardware.camera.postproc@1.0-service-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.camera.postproc@1.0-service-impl.so
 
 PRODUCT_PACKAGES += \
+    android.hardware.ir-service \
     manifest_oplus_cameraextension_aidl \
     manifest_oplus_cammidasservice_aidl \
     manifest_oplus_fingerprint
