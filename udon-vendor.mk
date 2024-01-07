@@ -9,6 +9,7 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/udon/proprietary/odm/bin/hw/android.hardware.ir-service:$(TARGET_COPY_OUT_ODM)/bin/hw/android.hardware.ir-service \
     vendor/oneplus/udon/proprietary/odm/bin/hw/vendor.oplus.hardware.biometrics.fingerprint@2.1-service_uff:$(TARGET_COPY_OUT_ODM)/bin/hw/vendor.oplus.hardware.biometrics.fingerprint@2.1-service_uff \
     vendor/oneplus/udon/proprietary/odm/bin/hw/vendor.oplus.hardware.cammidasservice-V1-service:$(TARGET_COPY_OUT_ODM)/bin/hw/vendor.oplus.hardware.cammidasservice-V1-service \
+    vendor/oneplus/udon/proprietary/odm/bin/hw/vendor-oplus-hardware-touch-V1-service:$(TARGET_COPY_OUT_ODM)/bin/hw/vendor-oplus-hardware-touch-V1-service \
     vendor/oneplus/udon/proprietary/odm/etc/acdbdata/Audio_Parameter_Version.txt:$(TARGET_COPY_OUT_ODM)/etc/acdbdata/Audio_Parameter_Version.txt \
     vendor/oneplus/udon/proprietary/odm/etc/acdbdata/FTM/acdb_cal.acdb:$(TARGET_COPY_OUT_ODM)/etc/acdbdata/FTM/acdb_cal.acdb \
     vendor/oneplus/udon/proprietary/odm/etc/acdbdata/FTM/workspaceFileXml.qwsp:$(TARGET_COPY_OUT_ODM)/etc/acdbdata/FTM/workspaceFileXml.qwsp \
@@ -1245,6 +1246,8 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/udon/proprietary/odm/lib64/vendor.oplus.hardware.olc2-V1-ndk_platform.so:$(TARGET_COPY_OUT_ODM)/lib64/vendor.oplus.hardware.olc2-V1-ndk_platform.so \
     vendor/oneplus/udon/proprietary/odm/lib64/vendor.oplus.hardware.orms@1.0.so:$(TARGET_COPY_OUT_ODM)/lib64/vendor.oplus.hardware.orms@1.0.so \
     vendor/oneplus/udon/proprietary/odm/lib64/vendor.oplus.hardware.touch-V1-ndk_platform.so:$(TARGET_COPY_OUT_ODM)/lib64/vendor.oplus.hardware.touch-V1-ndk_platform.so \
+    vendor/oneplus/udon/proprietary/odm/lib64/vendor.oplus.hardware.touch@1.0.so:$(TARGET_COPY_OUT_ODM)/lib64/vendor.oplus.hardware.touch@1.0.so \
+    vendor/oneplus/udon/proprietary/odm/bin/touchDaemon:$(TARGET_COPY_OUT_ODM)/bin/touchDaemon \
     vendor/oneplus/udon/proprietary/odm/vendor/etc/wifi/WCNSS_qcom_cfg.ini:$(TARGET_COPY_OUT_ODM)/vendor/etc/wifi/WCNSS_qcom_cfg.ini \
     vendor/oneplus/udon/proprietary/odm/vendor/firmware/uff_jv.b00:$(TARGET_COPY_OUT_ODM)/vendor/firmware/uff_jv.b00 \
     vendor/oneplus/udon/proprietary/odm/vendor/firmware/uff_jv.b01:$(TARGET_COPY_OUT_ODM)/vendor/firmware/uff_jv.b01 \
@@ -1597,4 +1600,5 @@ PRODUCT_PACKAGES += \
     android.hardware.ir-service \
     manifest_oplus_cameraextension_aidl \
     manifest_oplus_cammidasservice_aidl \
-    manifest_oplus_fingerprint
+    manifest_oplus_fingerprint \
+    manifest_touch_aidl
