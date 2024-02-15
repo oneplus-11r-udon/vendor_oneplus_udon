@@ -7,9 +7,10 @@ PRODUCT_SOONG_NAMESPACES += \
 
 PRODUCT_COPY_FILES += \
     vendor/oneplus/udon/proprietary/odm/bin/hw/android.hardware.ir-service:$(TARGET_COPY_OUT_ODM)/bin/hw/android.hardware.ir-service \
+    vendor/oneplus/udon/proprietary/odm/bin/hw/vendor-oplus-hardware-touch-V2-service:$(TARGET_COPY_OUT_ODM)/bin/hw/vendor-oplus-hardware-touch-V2-service \
     vendor/oneplus/udon/proprietary/odm/bin/hw/vendor.oplus.hardware.biometrics.fingerprint@2.1-service_uff:$(TARGET_COPY_OUT_ODM)/bin/hw/vendor.oplus.hardware.biometrics.fingerprint@2.1-service_uff \
     vendor/oneplus/udon/proprietary/odm/bin/hw/vendor.oplus.hardware.cammidasservice-V1-service:$(TARGET_COPY_OUT_ODM)/bin/hw/vendor.oplus.hardware.cammidasservice-V1-service \
-    vendor/oneplus/udon/proprietary/odm/bin/hw/vendor-oplus-hardware-touch-V1-service:$(TARGET_COPY_OUT_ODM)/bin/hw/vendor-oplus-hardware-touch-V1-service \
+    vendor/oneplus/udon/proprietary/odm/bin/touchDaemon:$(TARGET_COPY_OUT_ODM)/bin/touchDaemon \
     vendor/oneplus/udon/proprietary/odm/etc/acdbdata/Audio_Parameter_Version.txt:$(TARGET_COPY_OUT_ODM)/etc/acdbdata/Audio_Parameter_Version.txt \
     vendor/oneplus/udon/proprietary/odm/etc/acdbdata/FTM/acdb_cal.acdb:$(TARGET_COPY_OUT_ODM)/etc/acdbdata/FTM/acdb_cal.acdb \
     vendor/oneplus/udon/proprietary/odm/etc/acdbdata/FTM/workspaceFileXml.qwsp:$(TARGET_COPY_OUT_ODM)/etc/acdbdata/FTM/workspaceFileXml.qwsp \
@@ -18,10 +19,10 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/udon/proprietary/odm/etc/camera/AiFace.json:$(TARGET_COPY_OUT_ODM)/etc/camera/AiFace.json \
     vendor/oneplus/udon/proprietary/odm/etc/camera/CameraHWConfiguration.config:$(TARGET_COPY_OUT_ODM)/etc/camera/CameraHWConfiguration.config \
     vendor/oneplus/udon/proprietary/odm/etc/camera/M_FaceAttribute_RGB_age_gender_1.7.1.model.hardcode:$(TARGET_COPY_OUT_ODM)/etc/camera/M_FaceAttribute_RGB_age_gender_1.7.1.model.hardcode \
-    vendor/oneplus/udon/proprietary/odm/etc/camera/anc/fusion_model:$(TARGET_COPY_OUT_ODM)/etc/camera/anc/fusion_model \
     vendor/oneplus/udon/proprietary/odm/etc/camera/anc/fusion_model_post:$(TARGET_COPY_OUT_ODM)/etc/camera/anc/fusion_model_post \
-    vendor/oneplus/udon/proprietary/odm/etc/camera/anc/merged_model:$(TARGET_COPY_OUT_ODM)/etc/camera/anc/merged_model \
+    vendor/oneplus/udon/proprietary/odm/etc/camera/anc/fusion_model:$(TARGET_COPY_OUT_ODM)/etc/camera/anc/fusion_model \
     vendor/oneplus/udon/proprietary/odm/etc/camera/anc/merged_model_post:$(TARGET_COPY_OUT_ODM)/etc/camera/anc/merged_model_post \
+    vendor/oneplus/udon/proprietary/odm/etc/camera/anc/merged_model:$(TARGET_COPY_OUT_ODM)/etc/camera/anc/merged_model \
     vendor/oneplus/udon/proprietary/odm/etc/camera/anc_cl_kernel.cache:$(TARGET_COPY_OUT_ODM)/etc/camera/anc_cl_kernel.cache \
     vendor/oneplus/udon/proprietary/odm/etc/camera/anc_cl_kernel_ins.cache:$(TARGET_COPY_OUT_ODM)/etc/camera/anc_cl_kernel_ins.cache \
     vendor/oneplus/udon/proprietary/odm/etc/camera/ancbokehseg/anc_cl_kernel.cache:$(TARGET_COPY_OUT_ODM)/etc/camera/ancbokehseg/anc_cl_kernel.cache \
@@ -514,14 +515,12 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/udon/proprietary/odm/etc/camera/mtStereoParams.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/mtStereoParams.bin \
     vendor/oneplus/udon/proprietary/odm/etc/camera/mwStereoParams.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/mwStereoParams.bin \
     vendor/oneplus/udon/proprietary/odm/etc/camera/neon_yuv_LUT_64.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/neon_yuv_LUT_64.bin \
-    vendor/oneplus/udon/proprietary/odm/etc/camera/omoji/assets/sdk_assets/ai_face_processor_e47_s1.bundle:$(TARGET_COPY_OUT_ODM)/etc/camera/omoji/assets/sdk_assets/ai_face_processor_e47_s1.bundle \
     vendor/oneplus/udon/proprietary/odm/etc/camera/omoji/assets/sdk_assets/controller_cpp.bundle:$(TARGET_COPY_OUT_ODM)/etc/camera/omoji/assets/sdk_assets/controller_cpp.bundle \
     vendor/oneplus/udon/proprietary/odm/etc/camera/oplus_eis_camera.vcfg:$(TARGET_COPY_OUT_ODM)/etc/camera/oplus_eis_camera.vcfg \
     vendor/oneplus/udon/proprietary/odm/etc/camera/oplus_eis_camera_sec.vcfg:$(TARGET_COPY_OUT_ODM)/etc/camera/oplus_eis_camera_sec.vcfg \
     vendor/oneplus/udon/proprietary/odm/etc/camera/pf/PerfectColorSet/colormap/ColorLut:$(TARGET_COPY_OUT_ODM)/etc/camera/pf/PerfectColorSet/colormap/ColorLut \
     vendor/oneplus/udon/proprietary/odm/etc/camera/pf/PerfectColorSet/colormap/CurveLut:$(TARGET_COPY_OUT_ODM)/etc/camera/pf/PerfectColorSet/colormap/CurveLut \
     vendor/oneplus/udon/proprietary/odm/etc/camera/pf/PerfectColorSet/colormap/colorLut0:$(TARGET_COPY_OUT_ODM)/etc/camera/pf/PerfectColorSet/colormap/colorLut0 \
-    vendor/oneplus/udon/proprietary/odm/etc/camera/pf/PerfectColorSet/colormap/colorLut1:$(TARGET_COPY_OUT_ODM)/etc/camera/pf/PerfectColorSet/colormap/colorLut1 \
     vendor/oneplus/udon/proprietary/odm/etc/camera/pf/PerfectColorSet/colormap/colorLut10:$(TARGET_COPY_OUT_ODM)/etc/camera/pf/PerfectColorSet/colormap/colorLut10 \
     vendor/oneplus/udon/proprietary/odm/etc/camera/pf/PerfectColorSet/colormap/colorLut11:$(TARGET_COPY_OUT_ODM)/etc/camera/pf/PerfectColorSet/colormap/colorLut11 \
     vendor/oneplus/udon/proprietary/odm/etc/camera/pf/PerfectColorSet/colormap/colorLut12:$(TARGET_COPY_OUT_ODM)/etc/camera/pf/PerfectColorSet/colormap/colorLut12 \
@@ -531,6 +530,7 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/udon/proprietary/odm/etc/camera/pf/PerfectColorSet/colormap/colorLut16:$(TARGET_COPY_OUT_ODM)/etc/camera/pf/PerfectColorSet/colormap/colorLut16 \
     vendor/oneplus/udon/proprietary/odm/etc/camera/pf/PerfectColorSet/colormap/colorLut17:$(TARGET_COPY_OUT_ODM)/etc/camera/pf/PerfectColorSet/colormap/colorLut17 \
     vendor/oneplus/udon/proprietary/odm/etc/camera/pf/PerfectColorSet/colormap/colorLut18:$(TARGET_COPY_OUT_ODM)/etc/camera/pf/PerfectColorSet/colormap/colorLut18 \
+    vendor/oneplus/udon/proprietary/odm/etc/camera/pf/PerfectColorSet/colormap/colorLut1:$(TARGET_COPY_OUT_ODM)/etc/camera/pf/PerfectColorSet/colormap/colorLut1 \
     vendor/oneplus/udon/proprietary/odm/etc/camera/pf/PerfectColorSet/colormap/colorLut2:$(TARGET_COPY_OUT_ODM)/etc/camera/pf/PerfectColorSet/colormap/colorLut2 \
     vendor/oneplus/udon/proprietary/odm/etc/camera/pf/PerfectColorSet/colormap/colorLut3:$(TARGET_COPY_OUT_ODM)/etc/camera/pf/PerfectColorSet/colormap/colorLut3 \
     vendor/oneplus/udon/proprietary/odm/etc/camera/pf/PerfectColorSet/colormap/colorLut4:$(TARGET_COPY_OUT_ODM)/etc/camera/pf/PerfectColorSet/colormap/colorLut4 \
@@ -540,7 +540,6 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/udon/proprietary/odm/etc/camera/pf/PerfectColorSet/colormap/colorLut8:$(TARGET_COPY_OUT_ODM)/etc/camera/pf/PerfectColorSet/colormap/colorLut8 \
     vendor/oneplus/udon/proprietary/odm/etc/camera/pf/PerfectColorSet/colormap/colorLut9:$(TARGET_COPY_OUT_ODM)/etc/camera/pf/PerfectColorSet/colormap/colorLut9 \
     vendor/oneplus/udon/proprietary/odm/etc/camera/pf/PerfectColorSet/colormap/curveLut0:$(TARGET_COPY_OUT_ODM)/etc/camera/pf/PerfectColorSet/colormap/curveLut0 \
-    vendor/oneplus/udon/proprietary/odm/etc/camera/pf/PerfectColorSet/colormap/curveLut1:$(TARGET_COPY_OUT_ODM)/etc/camera/pf/PerfectColorSet/colormap/curveLut1 \
     vendor/oneplus/udon/proprietary/odm/etc/camera/pf/PerfectColorSet/colormap/curveLut10:$(TARGET_COPY_OUT_ODM)/etc/camera/pf/PerfectColorSet/colormap/curveLut10 \
     vendor/oneplus/udon/proprietary/odm/etc/camera/pf/PerfectColorSet/colormap/curveLut11:$(TARGET_COPY_OUT_ODM)/etc/camera/pf/PerfectColorSet/colormap/curveLut11 \
     vendor/oneplus/udon/proprietary/odm/etc/camera/pf/PerfectColorSet/colormap/curveLut12:$(TARGET_COPY_OUT_ODM)/etc/camera/pf/PerfectColorSet/colormap/curveLut12 \
@@ -550,6 +549,7 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/udon/proprietary/odm/etc/camera/pf/PerfectColorSet/colormap/curveLut16:$(TARGET_COPY_OUT_ODM)/etc/camera/pf/PerfectColorSet/colormap/curveLut16 \
     vendor/oneplus/udon/proprietary/odm/etc/camera/pf/PerfectColorSet/colormap/curveLut17:$(TARGET_COPY_OUT_ODM)/etc/camera/pf/PerfectColorSet/colormap/curveLut17 \
     vendor/oneplus/udon/proprietary/odm/etc/camera/pf/PerfectColorSet/colormap/curveLut18:$(TARGET_COPY_OUT_ODM)/etc/camera/pf/PerfectColorSet/colormap/curveLut18 \
+    vendor/oneplus/udon/proprietary/odm/etc/camera/pf/PerfectColorSet/colormap/curveLut1:$(TARGET_COPY_OUT_ODM)/etc/camera/pf/PerfectColorSet/colormap/curveLut1 \
     vendor/oneplus/udon/proprietary/odm/etc/camera/pf/PerfectColorSet/colormap/curveLut2:$(TARGET_COPY_OUT_ODM)/etc/camera/pf/PerfectColorSet/colormap/curveLut2 \
     vendor/oneplus/udon/proprietary/odm/etc/camera/pf/PerfectColorSet/colormap/curveLut3:$(TARGET_COPY_OUT_ODM)/etc/camera/pf/PerfectColorSet/colormap/curveLut3 \
     vendor/oneplus/udon/proprietary/odm/etc/camera/pf/PerfectColorSet/colormap/curveLut4:$(TARGET_COPY_OUT_ODM)/etc/camera/pf/PerfectColorSet/colormap/curveLut4 \
@@ -584,7 +584,6 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/udon/proprietary/odm/etc/camera/pf/PerfectColorSet/normal/ColorLut:$(TARGET_COPY_OUT_ODM)/etc/camera/pf/PerfectColorSet/normal/ColorLut \
     vendor/oneplus/udon/proprietary/odm/etc/camera/pf/PerfectColorSet/normal/CurveLut:$(TARGET_COPY_OUT_ODM)/etc/camera/pf/PerfectColorSet/normal/CurveLut \
     vendor/oneplus/udon/proprietary/odm/etc/camera/pf/PerfectColorSet/normal/colorLut0:$(TARGET_COPY_OUT_ODM)/etc/camera/pf/PerfectColorSet/normal/colorLut0 \
-    vendor/oneplus/udon/proprietary/odm/etc/camera/pf/PerfectColorSet/normal/colorLut1:$(TARGET_COPY_OUT_ODM)/etc/camera/pf/PerfectColorSet/normal/colorLut1 \
     vendor/oneplus/udon/proprietary/odm/etc/camera/pf/PerfectColorSet/normal/colorLut10:$(TARGET_COPY_OUT_ODM)/etc/camera/pf/PerfectColorSet/normal/colorLut10 \
     vendor/oneplus/udon/proprietary/odm/etc/camera/pf/PerfectColorSet/normal/colorLut11:$(TARGET_COPY_OUT_ODM)/etc/camera/pf/PerfectColorSet/normal/colorLut11 \
     vendor/oneplus/udon/proprietary/odm/etc/camera/pf/PerfectColorSet/normal/colorLut12:$(TARGET_COPY_OUT_ODM)/etc/camera/pf/PerfectColorSet/normal/colorLut12 \
@@ -594,6 +593,7 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/udon/proprietary/odm/etc/camera/pf/PerfectColorSet/normal/colorLut16:$(TARGET_COPY_OUT_ODM)/etc/camera/pf/PerfectColorSet/normal/colorLut16 \
     vendor/oneplus/udon/proprietary/odm/etc/camera/pf/PerfectColorSet/normal/colorLut17:$(TARGET_COPY_OUT_ODM)/etc/camera/pf/PerfectColorSet/normal/colorLut17 \
     vendor/oneplus/udon/proprietary/odm/etc/camera/pf/PerfectColorSet/normal/colorLut18:$(TARGET_COPY_OUT_ODM)/etc/camera/pf/PerfectColorSet/normal/colorLut18 \
+    vendor/oneplus/udon/proprietary/odm/etc/camera/pf/PerfectColorSet/normal/colorLut1:$(TARGET_COPY_OUT_ODM)/etc/camera/pf/PerfectColorSet/normal/colorLut1 \
     vendor/oneplus/udon/proprietary/odm/etc/camera/pf/PerfectColorSet/normal/colorLut2:$(TARGET_COPY_OUT_ODM)/etc/camera/pf/PerfectColorSet/normal/colorLut2 \
     vendor/oneplus/udon/proprietary/odm/etc/camera/pf/PerfectColorSet/normal/colorLut3:$(TARGET_COPY_OUT_ODM)/etc/camera/pf/PerfectColorSet/normal/colorLut3 \
     vendor/oneplus/udon/proprietary/odm/etc/camera/pf/PerfectColorSet/normal/colorLut4:$(TARGET_COPY_OUT_ODM)/etc/camera/pf/PerfectColorSet/normal/colorLut4 \
@@ -603,7 +603,6 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/udon/proprietary/odm/etc/camera/pf/PerfectColorSet/normal/colorLut8:$(TARGET_COPY_OUT_ODM)/etc/camera/pf/PerfectColorSet/normal/colorLut8 \
     vendor/oneplus/udon/proprietary/odm/etc/camera/pf/PerfectColorSet/normal/colorLut9:$(TARGET_COPY_OUT_ODM)/etc/camera/pf/PerfectColorSet/normal/colorLut9 \
     vendor/oneplus/udon/proprietary/odm/etc/camera/pf/PerfectColorSet/normal/curveLut0:$(TARGET_COPY_OUT_ODM)/etc/camera/pf/PerfectColorSet/normal/curveLut0 \
-    vendor/oneplus/udon/proprietary/odm/etc/camera/pf/PerfectColorSet/normal/curveLut1:$(TARGET_COPY_OUT_ODM)/etc/camera/pf/PerfectColorSet/normal/curveLut1 \
     vendor/oneplus/udon/proprietary/odm/etc/camera/pf/PerfectColorSet/normal/curveLut10:$(TARGET_COPY_OUT_ODM)/etc/camera/pf/PerfectColorSet/normal/curveLut10 \
     vendor/oneplus/udon/proprietary/odm/etc/camera/pf/PerfectColorSet/normal/curveLut11:$(TARGET_COPY_OUT_ODM)/etc/camera/pf/PerfectColorSet/normal/curveLut11 \
     vendor/oneplus/udon/proprietary/odm/etc/camera/pf/PerfectColorSet/normal/curveLut12:$(TARGET_COPY_OUT_ODM)/etc/camera/pf/PerfectColorSet/normal/curveLut12 \
@@ -613,6 +612,7 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/udon/proprietary/odm/etc/camera/pf/PerfectColorSet/normal/curveLut16:$(TARGET_COPY_OUT_ODM)/etc/camera/pf/PerfectColorSet/normal/curveLut16 \
     vendor/oneplus/udon/proprietary/odm/etc/camera/pf/PerfectColorSet/normal/curveLut17:$(TARGET_COPY_OUT_ODM)/etc/camera/pf/PerfectColorSet/normal/curveLut17 \
     vendor/oneplus/udon/proprietary/odm/etc/camera/pf/PerfectColorSet/normal/curveLut18:$(TARGET_COPY_OUT_ODM)/etc/camera/pf/PerfectColorSet/normal/curveLut18 \
+    vendor/oneplus/udon/proprietary/odm/etc/camera/pf/PerfectColorSet/normal/curveLut1:$(TARGET_COPY_OUT_ODM)/etc/camera/pf/PerfectColorSet/normal/curveLut1 \
     vendor/oneplus/udon/proprietary/odm/etc/camera/pf/PerfectColorSet/normal/curveLut2:$(TARGET_COPY_OUT_ODM)/etc/camera/pf/PerfectColorSet/normal/curveLut2 \
     vendor/oneplus/udon/proprietary/odm/etc/camera/pf/PerfectColorSet/normal/curveLut3:$(TARGET_COPY_OUT_ODM)/etc/camera/pf/PerfectColorSet/normal/curveLut3 \
     vendor/oneplus/udon/proprietary/odm/etc/camera/pf/PerfectColorSet/normal/curveLut4:$(TARGET_COPY_OUT_ODM)/etc/camera/pf/PerfectColorSet/normal/curveLut4 \
@@ -647,7 +647,6 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/udon/proprietary/odm/etc/camera/pf/PerfectColorSet/portrait/ColorLut:$(TARGET_COPY_OUT_ODM)/etc/camera/pf/PerfectColorSet/portrait/ColorLut \
     vendor/oneplus/udon/proprietary/odm/etc/camera/pf/PerfectColorSet/portrait/CurveLut:$(TARGET_COPY_OUT_ODM)/etc/camera/pf/PerfectColorSet/portrait/CurveLut \
     vendor/oneplus/udon/proprietary/odm/etc/camera/pf/PerfectColorSet/portrait/colorLut0:$(TARGET_COPY_OUT_ODM)/etc/camera/pf/PerfectColorSet/portrait/colorLut0 \
-    vendor/oneplus/udon/proprietary/odm/etc/camera/pf/PerfectColorSet/portrait/colorLut1:$(TARGET_COPY_OUT_ODM)/etc/camera/pf/PerfectColorSet/portrait/colorLut1 \
     vendor/oneplus/udon/proprietary/odm/etc/camera/pf/PerfectColorSet/portrait/colorLut10:$(TARGET_COPY_OUT_ODM)/etc/camera/pf/PerfectColorSet/portrait/colorLut10 \
     vendor/oneplus/udon/proprietary/odm/etc/camera/pf/PerfectColorSet/portrait/colorLut11:$(TARGET_COPY_OUT_ODM)/etc/camera/pf/PerfectColorSet/portrait/colorLut11 \
     vendor/oneplus/udon/proprietary/odm/etc/camera/pf/PerfectColorSet/portrait/colorLut12:$(TARGET_COPY_OUT_ODM)/etc/camera/pf/PerfectColorSet/portrait/colorLut12 \
@@ -657,6 +656,7 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/udon/proprietary/odm/etc/camera/pf/PerfectColorSet/portrait/colorLut16:$(TARGET_COPY_OUT_ODM)/etc/camera/pf/PerfectColorSet/portrait/colorLut16 \
     vendor/oneplus/udon/proprietary/odm/etc/camera/pf/PerfectColorSet/portrait/colorLut17:$(TARGET_COPY_OUT_ODM)/etc/camera/pf/PerfectColorSet/portrait/colorLut17 \
     vendor/oneplus/udon/proprietary/odm/etc/camera/pf/PerfectColorSet/portrait/colorLut18:$(TARGET_COPY_OUT_ODM)/etc/camera/pf/PerfectColorSet/portrait/colorLut18 \
+    vendor/oneplus/udon/proprietary/odm/etc/camera/pf/PerfectColorSet/portrait/colorLut1:$(TARGET_COPY_OUT_ODM)/etc/camera/pf/PerfectColorSet/portrait/colorLut1 \
     vendor/oneplus/udon/proprietary/odm/etc/camera/pf/PerfectColorSet/portrait/colorLut2:$(TARGET_COPY_OUT_ODM)/etc/camera/pf/PerfectColorSet/portrait/colorLut2 \
     vendor/oneplus/udon/proprietary/odm/etc/camera/pf/PerfectColorSet/portrait/colorLut3:$(TARGET_COPY_OUT_ODM)/etc/camera/pf/PerfectColorSet/portrait/colorLut3 \
     vendor/oneplus/udon/proprietary/odm/etc/camera/pf/PerfectColorSet/portrait/colorLut4:$(TARGET_COPY_OUT_ODM)/etc/camera/pf/PerfectColorSet/portrait/colorLut4 \
@@ -666,7 +666,6 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/udon/proprietary/odm/etc/camera/pf/PerfectColorSet/portrait/colorLut8:$(TARGET_COPY_OUT_ODM)/etc/camera/pf/PerfectColorSet/portrait/colorLut8 \
     vendor/oneplus/udon/proprietary/odm/etc/camera/pf/PerfectColorSet/portrait/colorLut9:$(TARGET_COPY_OUT_ODM)/etc/camera/pf/PerfectColorSet/portrait/colorLut9 \
     vendor/oneplus/udon/proprietary/odm/etc/camera/pf/PerfectColorSet/portrait/curveLut0:$(TARGET_COPY_OUT_ODM)/etc/camera/pf/PerfectColorSet/portrait/curveLut0 \
-    vendor/oneplus/udon/proprietary/odm/etc/camera/pf/PerfectColorSet/portrait/curveLut1:$(TARGET_COPY_OUT_ODM)/etc/camera/pf/PerfectColorSet/portrait/curveLut1 \
     vendor/oneplus/udon/proprietary/odm/etc/camera/pf/PerfectColorSet/portrait/curveLut10:$(TARGET_COPY_OUT_ODM)/etc/camera/pf/PerfectColorSet/portrait/curveLut10 \
     vendor/oneplus/udon/proprietary/odm/etc/camera/pf/PerfectColorSet/portrait/curveLut11:$(TARGET_COPY_OUT_ODM)/etc/camera/pf/PerfectColorSet/portrait/curveLut11 \
     vendor/oneplus/udon/proprietary/odm/etc/camera/pf/PerfectColorSet/portrait/curveLut12:$(TARGET_COPY_OUT_ODM)/etc/camera/pf/PerfectColorSet/portrait/curveLut12 \
@@ -676,6 +675,7 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/udon/proprietary/odm/etc/camera/pf/PerfectColorSet/portrait/curveLut16:$(TARGET_COPY_OUT_ODM)/etc/camera/pf/PerfectColorSet/portrait/curveLut16 \
     vendor/oneplus/udon/proprietary/odm/etc/camera/pf/PerfectColorSet/portrait/curveLut17:$(TARGET_COPY_OUT_ODM)/etc/camera/pf/PerfectColorSet/portrait/curveLut17 \
     vendor/oneplus/udon/proprietary/odm/etc/camera/pf/PerfectColorSet/portrait/curveLut18:$(TARGET_COPY_OUT_ODM)/etc/camera/pf/PerfectColorSet/portrait/curveLut18 \
+    vendor/oneplus/udon/proprietary/odm/etc/camera/pf/PerfectColorSet/portrait/curveLut1:$(TARGET_COPY_OUT_ODM)/etc/camera/pf/PerfectColorSet/portrait/curveLut1 \
     vendor/oneplus/udon/proprietary/odm/etc/camera/pf/PerfectColorSet/portrait/curveLut2:$(TARGET_COPY_OUT_ODM)/etc/camera/pf/PerfectColorSet/portrait/curveLut2 \
     vendor/oneplus/udon/proprietary/odm/etc/camera/pf/PerfectColorSet/portrait/curveLut3:$(TARGET_COPY_OUT_ODM)/etc/camera/pf/PerfectColorSet/portrait/curveLut3 \
     vendor/oneplus/udon/proprietary/odm/etc/camera/pf/PerfectColorSet/portrait/curveLut4:$(TARGET_COPY_OUT_ODM)/etc/camera/pf/PerfectColorSet/portrait/curveLut4 \
@@ -812,11 +812,10 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/udon/proprietary/odm/etc/camera/stereoParams.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/stereoParams.bin \
     vendor/oneplus/udon/proprietary/odm/etc/camera/sticker/M_SenseME_Action_5.2.12.model:$(TARGET_COPY_OUT_ODM)/etc/camera/sticker/M_SenseME_Action_5.2.12.model \
     vendor/oneplus/udon/proprietary/odm/etc/camera/sticker/material/animoji/data.zip:$(TARGET_COPY_OUT_ODM)/etc/camera/sticker/material/animoji/data.zip \
-    vendor/oneplus/udon/proprietary/odm/etc/camera/sticker/material/animoji/snowleopard_v_0_0_0_9.zip:$(TARGET_COPY_OUT_ODM)/etc/camera/sticker/material/animoji/snowleopard_v_0_0_0_9.zip \
     vendor/oneplus/udon/proprietary/odm/etc/camera/text_enhance_yuv_v1.tflite:$(TARGET_COPY_OUT_ODM)/etc/camera/text_enhance_yuv_v1.tflite \
     vendor/oneplus/udon/proprietary/odm/etc/camera/tonemap/curve_lut_0:$(TARGET_COPY_OUT_ODM)/etc/camera/tonemap/curve_lut_0 \
-    vendor/oneplus/udon/proprietary/odm/etc/camera/tonemap/curve_lut_1:$(TARGET_COPY_OUT_ODM)/etc/camera/tonemap/curve_lut_1 \
     vendor/oneplus/udon/proprietary/odm/etc/camera/tonemap/curve_lut_10:$(TARGET_COPY_OUT_ODM)/etc/camera/tonemap/curve_lut_10 \
+    vendor/oneplus/udon/proprietary/odm/etc/camera/tonemap/curve_lut_1:$(TARGET_COPY_OUT_ODM)/etc/camera/tonemap/curve_lut_1 \
     vendor/oneplus/udon/proprietary/odm/etc/camera/tonemap/curve_lut_2:$(TARGET_COPY_OUT_ODM)/etc/camera/tonemap/curve_lut_2 \
     vendor/oneplus/udon/proprietary/odm/etc/camera/tonemap/curve_lut_3:$(TARGET_COPY_OUT_ODM)/etc/camera/tonemap/curve_lut_3 \
     vendor/oneplus/udon/proprietary/odm/etc/camera/tonemap/curve_lut_4:$(TARGET_COPY_OUT_ODM)/etc/camera/tonemap/curve_lut_4 \
@@ -828,8 +827,8 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/udon/proprietary/odm/etc/camera/tonemap/list.txt:$(TARGET_COPY_OUT_ODM)/etc/camera/tonemap/list.txt \
     vendor/oneplus/udon/proprietary/odm/etc/camera/tonemap/s_curve_lut:$(TARGET_COPY_OUT_ODM)/etc/camera/tonemap/s_curve_lut \
     vendor/oneplus/udon/proprietary/odm/etc/camera/tonemap/tonemap/curve_lut_0:$(TARGET_COPY_OUT_ODM)/etc/camera/tonemap/tonemap/curve_lut_0 \
-    vendor/oneplus/udon/proprietary/odm/etc/camera/tonemap/tonemap/curve_lut_1:$(TARGET_COPY_OUT_ODM)/etc/camera/tonemap/tonemap/curve_lut_1 \
     vendor/oneplus/udon/proprietary/odm/etc/camera/tonemap/tonemap/curve_lut_10:$(TARGET_COPY_OUT_ODM)/etc/camera/tonemap/tonemap/curve_lut_10 \
+    vendor/oneplus/udon/proprietary/odm/etc/camera/tonemap/tonemap/curve_lut_1:$(TARGET_COPY_OUT_ODM)/etc/camera/tonemap/tonemap/curve_lut_1 \
     vendor/oneplus/udon/proprietary/odm/etc/camera/tonemap/tonemap/curve_lut_2:$(TARGET_COPY_OUT_ODM)/etc/camera/tonemap/tonemap/curve_lut_2 \
     vendor/oneplus/udon/proprietary/odm/etc/camera/tonemap/tonemap/curve_lut_3:$(TARGET_COPY_OUT_ODM)/etc/camera/tonemap/tonemap/curve_lut_3 \
     vendor/oneplus/udon/proprietary/odm/etc/camera/tonemap/tonemap/curve_lut_4:$(TARGET_COPY_OUT_ODM)/etc/camera/tonemap/tonemap/curve_lut_4 \
@@ -841,8 +840,8 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/udon/proprietary/odm/etc/camera/tonemap/tonemap/list.txt:$(TARGET_COPY_OUT_ODM)/etc/camera/tonemap/tonemap/list.txt \
     vendor/oneplus/udon/proprietary/odm/etc/camera/tonemap/tonemap/s_curve_lut:$(TARGET_COPY_OUT_ODM)/etc/camera/tonemap/tonemap/s_curve_lut \
     vendor/oneplus/udon/proprietary/odm/etc/camera/tonemap/tonemap/tonemap_lut_0:$(TARGET_COPY_OUT_ODM)/etc/camera/tonemap/tonemap/tonemap_lut_0 \
-    vendor/oneplus/udon/proprietary/odm/etc/camera/tonemap/tonemap/tonemap_lut_1:$(TARGET_COPY_OUT_ODM)/etc/camera/tonemap/tonemap/tonemap_lut_1 \
     vendor/oneplus/udon/proprietary/odm/etc/camera/tonemap/tonemap/tonemap_lut_10:$(TARGET_COPY_OUT_ODM)/etc/camera/tonemap/tonemap/tonemap_lut_10 \
+    vendor/oneplus/udon/proprietary/odm/etc/camera/tonemap/tonemap/tonemap_lut_1:$(TARGET_COPY_OUT_ODM)/etc/camera/tonemap/tonemap/tonemap_lut_1 \
     vendor/oneplus/udon/proprietary/odm/etc/camera/tonemap/tonemap/tonemap_lut_2:$(TARGET_COPY_OUT_ODM)/etc/camera/tonemap/tonemap/tonemap_lut_2 \
     vendor/oneplus/udon/proprietary/odm/etc/camera/tonemap/tonemap/tonemap_lut_3:$(TARGET_COPY_OUT_ODM)/etc/camera/tonemap/tonemap/tonemap_lut_3 \
     vendor/oneplus/udon/proprietary/odm/etc/camera/tonemap/tonemap/tonemap_lut_4:$(TARGET_COPY_OUT_ODM)/etc/camera/tonemap/tonemap/tonemap_lut_4 \
@@ -852,8 +851,8 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/udon/proprietary/odm/etc/camera/tonemap/tonemap/tonemap_lut_8:$(TARGET_COPY_OUT_ODM)/etc/camera/tonemap/tonemap/tonemap_lut_8 \
     vendor/oneplus/udon/proprietary/odm/etc/camera/tonemap/tonemap/tonemap_lut_9:$(TARGET_COPY_OUT_ODM)/etc/camera/tonemap/tonemap/tonemap_lut_9 \
     vendor/oneplus/udon/proprietary/odm/etc/camera/tonemap/tonemap_lut_0:$(TARGET_COPY_OUT_ODM)/etc/camera/tonemap/tonemap_lut_0 \
-    vendor/oneplus/udon/proprietary/odm/etc/camera/tonemap/tonemap_lut_1:$(TARGET_COPY_OUT_ODM)/etc/camera/tonemap/tonemap_lut_1 \
     vendor/oneplus/udon/proprietary/odm/etc/camera/tonemap/tonemap_lut_10:$(TARGET_COPY_OUT_ODM)/etc/camera/tonemap/tonemap_lut_10 \
+    vendor/oneplus/udon/proprietary/odm/etc/camera/tonemap/tonemap_lut_1:$(TARGET_COPY_OUT_ODM)/etc/camera/tonemap/tonemap_lut_1 \
     vendor/oneplus/udon/proprietary/odm/etc/camera/tonemap/tonemap_lut_2:$(TARGET_COPY_OUT_ODM)/etc/camera/tonemap/tonemap_lut_2 \
     vendor/oneplus/udon/proprietary/odm/etc/camera/tonemap/tonemap_lut_3:$(TARGET_COPY_OUT_ODM)/etc/camera/tonemap/tonemap_lut_3 \
     vendor/oneplus/udon/proprietary/odm/etc/camera/tonemap/tonemap_lut_4:$(TARGET_COPY_OUT_ODM)/etc/camera/tonemap/tonemap_lut_4 \
@@ -867,6 +866,8 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/udon/proprietary/odm/etc/init/init.camera_upate.rc:$(TARGET_COPY_OUT_ODM)/etc/init/init.camera_upate.rc \
     vendor/oneplus/udon/proprietary/odm/etc/init/init.camera_update.rc:$(TARGET_COPY_OUT_ODM)/etc/init/init.camera_update.rc \
     vendor/oneplus/udon/proprietary/odm/etc/init/init.odm.camera.provider.override.rc:$(TARGET_COPY_OUT_ODM)/etc/init/init.odm.camera.provider.override.rc \
+    vendor/oneplus/udon/proprietary/odm/etc/init/init.touchDaemon.rc:$(TARGET_COPY_OUT_ODM)/etc/init/init.touchDaemon.rc \
+    vendor/oneplus/udon/proprietary/odm/etc/init/vendor-oplus-hardware-touch-V2-service.rc:$(TARGET_COPY_OUT_ODM)/etc/init/vendor-oplus-hardware-touch-V2-service.rc \
     vendor/oneplus/udon/proprietary/odm/etc/init/vendor.oplus.hardware.biometrics.fingerprint@2.1-service.rc:$(TARGET_COPY_OUT_ODM)/etc/init/vendor.oplus.hardware.biometrics.fingerprint@2.1-service.rc \
     vendor/oneplus/udon/proprietary/odm/etc/init/vendor.oplus.hardware.cammidasservice-V1-service.rc:$(TARGET_COPY_OUT_ODM)/etc/init/vendor.oplus.hardware.cammidasservice-V1-service.rc \
     vendor/oneplus/udon/proprietary/odm/etc/inparm/iris7/inParm14.txt:$(TARGET_COPY_OUT_ODM)/etc/inparm/iris7/inParm14.txt \
@@ -958,9 +959,21 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/udon/proprietary/odm/etc/sensor/config/waipio_qrd_ois_system.json:$(TARGET_COPY_OUT_ODM)/etc/sensor/config/waipio_qrd_ois_system.json \
     vendor/oneplus/udon/proprietary/odm/etc/sensor/config/waipio_qrd_oplus_smart_prox.json:$(TARGET_COPY_OUT_ODM)/etc/sensor/config/waipio_qrd_oplus_smart_prox.json \
     vendor/oneplus/udon/proprietary/odm/etc/sensor/sensor_config.json:$(TARGET_COPY_OUT_ODM)/etc/sensor/sensor_config.json \
+    vendor/oneplus/udon/proprietary/odm/etc/sensor/sensor_light_para.json:$(TARGET_COPY_OUT_ODM)/etc/sensor/sensor_light_para.json \
     vendor/oneplus/udon/proprietary/odm/etc/wifi/bdwlan.elf:$(TARGET_COPY_OUT_ODM)/etc/wifi/bdwlan.elf \
     vendor/oneplus/udon/proprietary/odm/etc/wifi/bdwlang.elf:$(TARGET_COPY_OUT_ODM)/etc/wifi/bdwlang.elf \
+    vendor/oneplus/udon/proprietary/odm/etc/wifi/bin_version:$(TARGET_COPY_OUT_ODM)/etc/wifi/bin_version \
+    vendor/oneplus/udon/proprietary/odm/etc/wifi/cnss_diag.conf:$(TARGET_COPY_OUT_ODM)/etc/wifi/cnss_diag.conf \
+    vendor/oneplus/udon/proprietary/odm/etc/wifi/cnss_diag_always_on.conf:$(TARGET_COPY_OUT_ODM)/etc/wifi/cnss_diag_always_on.conf \
+    vendor/oneplus/udon/proprietary/odm/etc/wifi/qca6490/bdwlan.elf:$(TARGET_COPY_OUT_ODM)/etc/wifi/qca6490/bdwlan.elf \
+    vendor/oneplus/udon/proprietary/odm/etc/wifi/qca6490/bdwlang.elf:$(TARGET_COPY_OUT_ODM)/etc/wifi/qca6490/bdwlang.elf \
+    vendor/oneplus/udon/proprietary/odm/etc/wifi/qca6490/bdwlangsec.elf:$(TARGET_COPY_OUT_ODM)/etc/wifi/qca6490/bdwlangsec.elf \
+    vendor/oneplus/udon/proprietary/odm/etc/wifi/qca6490/bdwlansec.elf:$(TARGET_COPY_OUT_ODM)/etc/wifi/qca6490/bdwlansec.elf \
+    vendor/oneplus/udon/proprietary/odm/etc/wifi/qca6490/regdb.bin:$(TARGET_COPY_OUT_ODM)/etc/wifi/qca6490/regdb.bin \
     vendor/oneplus/udon/proprietary/odm/etc/wifi/regdb.bin:$(TARGET_COPY_OUT_ODM)/etc/wifi/regdb.bin \
+    vendor/oneplus/udon/proprietary/odm/etc/wifi/regdb_version:$(TARGET_COPY_OUT_ODM)/etc/wifi/regdb_version \
+    vendor/oneplus/udon/proprietary/odm/etc/wifi/sar-vendor-cmd.xml:$(TARGET_COPY_OUT_ODM)/etc/wifi/sar-vendor-cmd.xml \
+    vendor/oneplus/udon/proprietary/odm/etc/wifi/wifisar.cfg:$(TARGET_COPY_OUT_ODM)/etc/wifi/wifisar.cfg \
     vendor/oneplus/udon/proprietary/odm/firmware/tfa98xx.cnt:$(TARGET_COPY_OUT_ODM)/firmware/tfa98xx.cnt \
     vendor/oneplus/udon/proprietary/odm/lib/rfsa/adsp/QNN_lib/libQnnHtpV69Skel.so:$(TARGET_COPY_OUT_ODM)/lib/rfsa/adsp/QNN_lib/libQnnHtpV69Skel.so \
     vendor/oneplus/udon/proprietary/odm/lib/rfsa/adsp/aiboost/libQnnHtpV69Skel.so:$(TARGET_COPY_OUT_ODM)/lib/rfsa/adsp/aiboost/libQnnHtpV69Skel.so \
@@ -970,9 +983,6 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/udon/proprietary/odm/lib/rfsa/adsp/libSnpeHtpV69Skel.so:$(TARGET_COPY_OUT_ODM)/lib/rfsa/adsp/libSnpeHtpV69Skel.so \
     vendor/oneplus/udon/proprietary/odm/lib/rfsa/adsp/libSuperRawPost_skel.so:$(TARGET_COPY_OUT_ODM)/lib/rfsa/adsp/libSuperRawPost_skel.so \
     vendor/oneplus/udon/proprietary/odm/lib/rfsa/adsp/libVDHexagonBlurless_v2_skel.so:$(TARGET_COPY_OUT_ODM)/lib/rfsa/adsp/libVDHexagonBlurless_v2_skel.so \
-    vendor/oneplus/udon/proprietary/odm/lib/rfsa/adsp/libaiboost_skel.so:$(TARGET_COPY_OUT_ODM)/lib/rfsa/adsp/libaiboost_skel.so \
-    vendor/oneplus/udon/proprietary/odm/lib/rfsa/adsp/libaiboost_skel_v65.so:$(TARGET_COPY_OUT_ODM)/lib/rfsa/adsp/libaiboost_skel_v65.so \
-    vendor/oneplus/udon/proprietary/odm/lib/rfsa/adsp/libaiboost_skel_v66.so:$(TARGET_COPY_OUT_ODM)/lib/rfsa/adsp/libaiboost_skel_v66.so \
     vendor/oneplus/udon/proprietary/odm/lib/rfsa/adsp/libaisr_skel.so:$(TARGET_COPY_OUT_ODM)/lib/rfsa/adsp/libaisr_skel.so \
     vendor/oneplus/udon/proprietary/odm/lib/rfsa/adsp/libarc_gk_pt_hvx_skel.so:$(TARGET_COPY_OUT_ODM)/lib/rfsa/adsp/libarc_gk_pt_hvx_skel.so \
     vendor/oneplus/udon/proprietary/odm/lib/rfsa/adsp/libarc_htp_driver_skel.so:$(TARGET_COPY_OUT_ODM)/lib/rfsa/adsp/libarc_htp_driver_skel.so \
@@ -1185,7 +1195,6 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/udon/proprietary/odm/lib64/libarcsoft_ultra_high_dynamic_range.so:$(TARGET_COPY_OUT_ODM)/lib64/libarcsoft_ultra_high_dynamic_range.so \
     vendor/oneplus/udon/proprietary/odm/lib64/libarcsoft_videoautozoom.so:$(TARGET_COPY_OUT_ODM)/lib64/libarcsoft_videoautozoom.so \
     vendor/oneplus/udon/proprietary/odm/lib64/libc++_shared.so:$(TARGET_COPY_OUT_ODM)/lib64/libc++_shared.so \
-    vendor/oneplus/udon/proprietary/odm/lib64/libc2filterplugin.so:$(TARGET_COPY_OUT_ODM)/lib64/libc2filterplugin.so \
     vendor/oneplus/udon/proprietary/odm/lib64/libcdm_metrics_protos.so:$(TARGET_COPY_OUT_ODM)/lib64/libcdm_metrics_protos.so \
     vendor/oneplus/udon/proprietary/odm/lib64/libcdm_protos.so:$(TARGET_COPY_OUT_ODM)/lib64/libcdm_protos.so \
     vendor/oneplus/udon/proprietary/odm/lib64/libcreatebin.so:$(TARGET_COPY_OUT_ODM)/lib64/libcreatebin.so \
@@ -1246,8 +1255,7 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/udon/proprietary/odm/lib64/vendor.oplus.hardware.olc2-V1-ndk_platform.so:$(TARGET_COPY_OUT_ODM)/lib64/vendor.oplus.hardware.olc2-V1-ndk_platform.so \
     vendor/oneplus/udon/proprietary/odm/lib64/vendor.oplus.hardware.orms@1.0.so:$(TARGET_COPY_OUT_ODM)/lib64/vendor.oplus.hardware.orms@1.0.so \
     vendor/oneplus/udon/proprietary/odm/lib64/vendor.oplus.hardware.touch-V1-ndk_platform.so:$(TARGET_COPY_OUT_ODM)/lib64/vendor.oplus.hardware.touch-V1-ndk_platform.so \
-    vendor/oneplus/udon/proprietary/odm/lib64/vendor.oplus.hardware.touch@1.0.so:$(TARGET_COPY_OUT_ODM)/lib64/vendor.oplus.hardware.touch@1.0.so \
-    vendor/oneplus/udon/proprietary/odm/bin/touchDaemon:$(TARGET_COPY_OUT_ODM)/bin/touchDaemon \
+    vendor/oneplus/udon/proprietary/odm/lib64/vendor.oplus.hardware.touch-V2-ndk_platform.so:$(TARGET_COPY_OUT_ODM)/lib64/vendor.oplus.hardware.touch-V2-ndk_platform.so \
     vendor/oneplus/udon/proprietary/odm/vendor/etc/wifi/WCNSS_qcom_cfg.ini:$(TARGET_COPY_OUT_ODM)/vendor/etc/wifi/WCNSS_qcom_cfg.ini \
     vendor/oneplus/udon/proprietary/odm/vendor/firmware/uff_jv.b00:$(TARGET_COPY_OUT_ODM)/vendor/firmware/uff_jv.b00 \
     vendor/oneplus/udon/proprietary/odm/vendor/firmware/uff_jv.b01:$(TARGET_COPY_OUT_ODM)/vendor/firmware/uff_jv.b01 \
