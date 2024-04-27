@@ -1011,7 +1011,11 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/udon/proprietary/odm/lib/rfsa/adsp/libvdblurless_5.0.2_skel.so:$(TARGET_COPY_OUT_ODM)/lib/rfsa/adsp/libvdblurless_5.0.2_skel.so \
     vendor/oneplus/udon/proprietary/odm/lib/rfsa/adsp/libvdblurless_skel.so:$(TARGET_COPY_OUT_ODM)/lib/rfsa/adsp/libvdblurless_skel.so \
     vendor/oneplus/udon/proprietary/odm/lib/rfsa/adsp/libvdsuperphoto_skel.so:$(TARGET_COPY_OUT_ODM)/lib/rfsa/adsp/libvdsuperphoto_skel.so \
+    vendor/oneplus/udon/proprietary/odm/lib64/QNN_lib/libQnnHtp.so:$(TARGET_COPY_OUT_ODM)/lib64/QNN_lib/libQnnHtp.so \
     vendor/oneplus/udon/proprietary/odm/lib64/android.hardware.biometrics.common-V1-ndk_platform.so:$(TARGET_COPY_OUT_ODM)/lib64/android.hardware.biometrics.common-V1-ndk_platform.so \
+    vendor/oneplus/udon/proprietary/odm/lib64/android.hardware.graphics.allocator@2.0.so:$(TARGET_COPY_OUT_ODM)/lib64/android.hardware.graphics.allocator@2.0.so \
+    vendor/oneplus/udon/proprietary/odm/lib64/android.hardware.graphics.allocator@3.0.so:$(TARGET_COPY_OUT_ODM)/lib64/android.hardware.graphics.allocator@3.0.so \
+    vendor/oneplus/udon/proprietary/odm/lib64/android.hardware.graphics.allocator@4.0.so:$(TARGET_COPY_OUT_ODM)/lib64/android.hardware.graphics.allocator@4.0.so \
     vendor/oneplus/udon/proprietary/odm/lib64/android.hardware.ir-V1-ndk_platform.so:$(TARGET_COPY_OUT_ODM)/lib64/android.hardware.ir-V1-ndk_platform.so \
     vendor/oneplus/udon/proprietary/odm/lib64/camera/com.qti.sensor.udon_imx890.so:$(TARGET_COPY_OUT_ODM)/lib64/camera/com.qti.sensor.udon_imx890.so \
     vendor/oneplus/udon/proprietary/odm/lib64/camera/com.qti.sensor.udon_imx890_sunny.so:$(TARGET_COPY_OUT_ODM)/lib64/camera/com.qti.sensor.udon_imx890_sunny.so \
@@ -1152,6 +1156,7 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/udon/proprietary/odm/lib64/libapsexif.so:$(TARGET_COPY_OUT_ODM)/lib64/libapsexif.so \
     vendor/oneplus/udon/proprietary/odm/lib64/libapsjpeg.so:$(TARGET_COPY_OUT_ODM)/lib64/libapsjpeg.so \
     vendor/oneplus/udon/proprietary/odm/lib64/libapspng.so:$(TARGET_COPY_OUT_ODM)/lib64/libapspng.so \
+    vendor/oneplus/udon/proprietary/odm/lib64/libapsultrahdr.so:$(TARGET_COPY_OUT_ODM)/lib64/libapsultrahdr.so \
     vendor/oneplus/udon/proprietary/odm/lib64/libarc_eis.so:$(TARGET_COPY_OUT_ODM)/lib64/libarc_eis.so \
     vendor/oneplus/udon/proprietary/odm/lib64/libarc_eis_custom.so:$(TARGET_COPY_OUT_ODM)/lib64/libarc_eis_custom.so \
     vendor/oneplus/udon/proprietary/odm/lib64/libarcsoft_distortion_correction.so:$(TARGET_COPY_OUT_ODM)/lib64/libarcsoft_distortion_correction.so \
@@ -1206,6 +1211,7 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/udon/proprietary/odm/lib64/libdualcam_optical_zoom_control.so:$(TARGET_COPY_OUT_ODM)/lib64/libdualcam_optical_zoom_control.so \
     vendor/oneplus/udon/proprietary/odm/lib64/libdualcam_video_optical_zoom.so:$(TARGET_COPY_OUT_ODM)/lib64/libdualcam_video_optical_zoom.so \
     vendor/oneplus/udon/proprietary/odm/lib64/libeffect_custom.so:$(TARGET_COPY_OUT_ODM)/lib64/libeffect_custom.so \
+    vendor/oneplus/udon/proprietary/odm/lib64/libexif-jpeg-aps.so:$(TARGET_COPY_OUT_ODM)/lib64/libexif-jpeg-aps.so \
     vendor/oneplus/udon/proprietary/odm/lib64/libextensionlayer.so:$(TARGET_COPY_OUT_ODM)/lib64/libextensionlayer.so \
     vendor/oneplus/udon/proprietary/odm/lib64/libfuai_vendor.so:$(TARGET_COPY_OUT_ODM)/lib64/libfuai_vendor.so \
     vendor/oneplus/udon/proprietary/odm/lib64/libhci_face_camera_api.so:$(TARGET_COPY_OUT_ODM)/lib64/libhci_face_camera_api.so \
@@ -1243,6 +1249,7 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/udon/proprietary/odm/lib64/libswscale.so:$(TARGET_COPY_OUT_ODM)/lib64/libswscale.so \
     vendor/oneplus/udon/proprietary/odm/lib64/libtriplecam_optical_zoom_control.so:$(TARGET_COPY_OUT_ODM)/lib64/libtriplecam_optical_zoom_control.so \
     vendor/oneplus/udon/proprietary/odm/lib64/libtriplecam_video_optical_zoom.so:$(TARGET_COPY_OUT_ODM)/lib64/libtriplecam_video_optical_zoom.so \
+    vendor/oneplus/udon/proprietary/odm/lib64/libui-oos.so:$(TARGET_COPY_OUT_ODM)/lib64/libui-oos.so \
     vendor/oneplus/udon/proprietary/odm/lib64/libwatermark_photo.so:$(TARGET_COPY_OUT_ODM)/lib64/libwatermark_photo.so \
     vendor/oneplus/udon/proprietary/odm/lib64/libwrapper_te.so:$(TARGET_COPY_OUT_ODM)/lib64/libwrapper_te.so \
     vendor/oneplus/udon/proprietary/odm/lib64/libyuv2.so:$(TARGET_COPY_OUT_ODM)/lib64/libyuv2.so \
