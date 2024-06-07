@@ -1612,6 +1612,7 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/udon/proprietary/vendor/lib64/vendor.qti.hardware.camera.postproc@1.0-service-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.camera.postproc@1.0-service-impl.so
 
 PRODUCT_PACKAGES += \
+    vendor.oplus.hardware.touch-V1-ndk_platform \
     android.hardware.ir-service \
     manifest_oplus_cameraextension_aidl \
     manifest_oplus_cammidasservice_aidl \

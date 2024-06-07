@@ -8,6 +8,23 @@ soong_namespace {
 	],
 }
 
+cc_prebuilt_library_shared {
+	name: "vendor.oplus.hardware.touch-V1-ndk_platform",
+	owner: "oneplus",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm64: {
+			srcs: ["proprietary/odm/lib64/vendor.oplus.hardware.touch-V1-ndk_platform.so"],
+		},
+	},
+	compile_multilib: "64",
+	check_elf_files: false,
+	prefer: true,
+	device_specific: true,
+}
+
 prebuilt_etc_xml {
 	name: "android.hardware.ir-service",
 	owner: "oneplus",
